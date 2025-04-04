@@ -16,7 +16,9 @@ import java.util.Base64;
 import java.util.Properties;
 
 public class MailingMailtapExample {
-    public static void main(String[] args) throws MessagingException, IOException {
+    public static void main(String[] args) throws MessagingException, IOException, InterruptedException {
+
+        Thread.sleep(1000);
 
         Properties properties = new Properties();
         properties.put("mail.smtp.host","smtp.mailtrap.io");
